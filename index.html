@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>被災地でのアスベスト（石綿）ばく露防止ガイド</title>
+    <style>
+        /* 基本スタイル設定 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+            margin: 0;
+            padding: 16px;
+            color: #2d3748;
+            background-color: #f7fafc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ヘッダーバナー */
+        .header-banner {
+            background-color: #1a365d;
+            color: #ffffff;
+            padding: 24px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header-banner h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .header-banner p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+
+        /* 警告メッセージボックス */
+        .alert-box {
+            background-color: #fff5f5;
+            border-left: 5px solid #e53e3e;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .alert-box h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            color: #c53030;
+            border: none;
+            padding: 0;
+        }
+
+        .alert-box p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #742a2a;
+        }
+
+        /* セクション見出し */
+        h2 {
+            font-size: 1.15rem;
+            color: #2b6cb0;
+            border-left: 5px solid #3182ce;
+            padding-left: 10px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* コンテンツカード */
+        .section-block {
+            background-color: #ffffff;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* テーブルデザイン */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #bee3f8;
+            width: 30%;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            vertical-align: top;
+        }
+
+        /* ルールカード */
+        .rule-card {
+            background-color: #f0fff4;
+            border: 1px solid #c6f6d5;
+            border-radius: 6px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+        }
+
+        .rule-badge {
+            display: inline-block;
+            background-color: #38a169;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-right: 6px;
+        }
+
+        .rule-title {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #22543d;
+            display: inline;
+        }
+
+        .rule-card ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: #2f855a;
+        }
+
+        /* 外部リンク集 */
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 10px;
+            padding: 12px 14px;
+            background-color: #edf2f7;
+            border-radius: 6px;
+            border-left: 4px solid #4a5568;
+        }
+
+        .link-list a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+
+        .link-list p {
+            margin: 4px 0 0 0;
+            font-size: 0.85rem;
+            color: #4a5568;
+        }
+
+        /* SNSコピー用ボックス */
+        .sns-box {
+            background-color: #ebf8ff;
+            border: 1px dashed #3182ce;
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .sns-box h3 {
+            color: #2b6cb0;
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+        }
+
+        .sns-box code {
+            display: block;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #cbd5e0;
+            font-family: inherit;
+            font-size: 0.9rem;
+            color: #2d3748;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+            }
+            th {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ヘッダーバナー -->
+    <div class="header-banner">
+        <h1>被災地の建物解体・片付けにおける<br>「アスベスト（石綿）」から身を守るために</h1>
+        <p>阪神・東日本・熊本地震・能登半島地震の教訓から学ぶ安全対策ガイド</p>
+    </div>
+
+    <!-- 導入・警告 -->
+    <div class="alert-box">
+        <h2>なぜ今、アスベスト（石綿）への注意が必要なのか？</h2>
+        <p>
+            倒壊した家屋の撤去や片付けの際、粉じんとともに<strong>目に見えない微細なアスベスト繊維</strong>が空中に舞い散るリスクがあります。<br>
+            アスベストは吸い込んでもすぐに症状が出ないため軽視されがちですが、数十年後に健康被害を引き起こす可能性があります。自分自身とご家族の健康を守るため、事前の正しい対策が不可欠です。
+        </p>
+    </div>
+
+    <!-- 過去災害の教訓 -->
+    <div class="section-block">
+        <h2>過去の災害における教訓と対策の歴史</h2>
+        <table>
+            <tr>
+                <th>阪神・淡路大震災<br><small>(1995年)</small></th>
+                <td>大規模な火災や崩落により粉じん・アスベストが飛散。当時は知識や保護具が不十分であったため、復旧作業者や周辺住民へのばく露が後から大きな問題となりました。</td>
+            </tr>
+            <tr>
+                <th>東日本大震災<br><small>(2011年)</small></th>
+                <td>津波による倒壊家屋の撤去作業時、防じんマスク着用などの粉じん対策が強く呼びかけられ、広範囲での環境モニタリング調査が本格化しました。</td>
+            </tr>
+            <tr>
+                <th>熊本地震<br><small>(2016年)</small></th>
+                <td>古い木造住宅だけでなく、RC（鉄筋コンクリート）造の建物解体現場における飛散対策が強化されました。ボランティアへの適切な防じんマスク配布の重要性が浮き彫りになりました。</td>
+            </tr>
+            <tr>
+                <th>能登半島地震<br><small>(2024年)</small></th>
+                <td>瓦礫撤去の長期化に伴い、正しい保護具の着用と、作業前の散水（水まき）による飛散防止徹底が呼びかけられています。</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 3つのルール -->
+    <div class="section-block">
+        <h2>今日からできる！身を守るための「3つの基本ルール」</h2>
+
+        <div class="rule-card">
+            <span class="rule-badge">ルール 1</span>
+            <div class="rule-title">必ず「国家検定合格品（DS2等）」の防じんマスクを着用する</div>
+            <ul>
+                <li>普通のガーゼマスクや不織布サージカルマスクでは、微細なアスベスト繊維を防げません。</li>
+                <li>ホームセンターや支援物資で入手可能な<strong>「DS2」規格</strong>の防じんマスクを顔に隙間なく密着させて着用してください。</li>
+            </ul>
+        </div>
+
+        <div class="rule-card">
+            <span class="rule-badge">ルール 2</span>
+            <div class="rule-title">作業前に「水まき」をして粉じんの飛散を抑える</div>
+            <ul>
+                <li>乾燥した状態で瓦礫や建材を動かすと、粉じんが激しく舞い上がります。</li>
+                <li>作業を行う場所や瓦礫には、ジョウロやホースで<strong>事前にしっかり散水し、濡らしてから</strong>作業しましょう。</li>
+            </ul>
+        </div>
+
+        <div class="rule-card">
+            <span class="rule-badge">ルール 3</span>
+            <div class="rule-title">作業着や粉じんを自宅・避難所に持ち込まない</div>
+            <ul>
+                <li>作業服に付着した粉じんをそのまま家に持ち込むと、ご家族が吸い込んでしまう危険があります。</li>
+                <li>作業後は衣服を叩かずに静かに脱ぎ、ビニール袋に入れて保管するか、すぐに洗濯・着替えを行いましょう。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 公式リンク集 -->
+    <div class="section-block">
+        <h2>信頼できる行政の公式マニュアル・ガイド</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.env.go.jp/chemi/asbestos/resour_asbestos/disaster.html" target="_blank" rel="noopener">環境省：災害時における石綿飛散防止に係る取組（公式ページ）</a>
+                <p>災害時の石綿飛散防止マニュアル、Q&A、自治体向けガイドラインなどが掲載されています。</p>
+            </li>
+            <li>
+                <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koudou/asbestos/index.html" target="_blank" rel="noopener">厚生労働省：瓦礫の撤去作業等における石綿ばく露防止対策</a>
+                <p>復旧作業者・ボランティアの皆様に向けた具体的な安全対策や呼吸用保護具の使い方が解説されています。</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SNS拡散用領域 -->
+    <div class="sns-box">
+        <h3>拡散用SNSテキスト案（X/Twitter等でご利用ください）</h3>
+        <code>【被災地で片付け作業をされる方へ】
+倒壊した家屋の撤去時、目に見えないアスベスト（石綿）の飛散に注意が必要です。
+阪神・東日本・熊本・能登の教訓から、身を守るための3つの対策（DS2マスク／水まき／衣服の管理）をまとめました。
+詳細はこちら👇
+[ここにWebサイトのURL]</code>
+    </div>
+
+    <div class="footer">
+        被災地における安全・安心な復旧作業のために | 災害時石綿飛散防止啓発プロジェクト
+    </div>
+
+</div>
+
+</body>
+</html>
